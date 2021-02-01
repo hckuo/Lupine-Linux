@@ -33,7 +33,7 @@ sudo mknod -m 660 $mnt/dev/mem c 1 1
 # install network setup script
 sudo cp scripts/busybox-x86_64 $mnt
 sudo cp scripts/guest* $mnt
-sudo cp load_entropy/load_entropy $mnt
+sudo cp load_entropy/load_entropy.c $mnt
 # install musl libc
 sudo mkdir -p $mnt/trusted
 sudo cp scripts/libc.so $mnt/trusted/libc.so
